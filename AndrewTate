@@ -1,0 +1,107 @@
+script_key="";
+getgenv().AndrewTate = {
+    GameMode = "DH", -- DH, HC
+    Sigma = false, 
+    AndrewTateIntro = {
+        Enabled = true
+    },
+    ["LookatTarget"] = { 
+        Enabled = false,
+    },
+    ["Camlock"] = {
+        Enabled = true,
+        AimPart = "Head",
+        Prediction = 0.129,
+        Smoothness = 0.217, -- SMOOTHNESS 0.9 FOR HC WORK
+        Mode = "Button", -- Controller,Tool,Button,PC
+        SeeTarget = false
+    },
+    ["TargetAim"] = {
+        Enabled = true, -- PRED HAS TO BE 0.0/0.0128 AND ANY NUMBER FOR HC WORK.
+        AimPart = "HumanoidRootPart",
+        Prediction = 0.129
+    },
+    ["Offsets"] = {
+        Enabled = true,
+        Jump = -1.45,
+        Fall = -1.67
+    },
+    ["AutoAir"] = {
+        Enabled = false,
+        Delay = 0
+    },
+    ["Macro"] = {
+        Enabled = true
+    },
+    ["Resolver"] = {
+        Enabled = false,
+        Method = "RecalculateVelocity",
+        PredictionSettings = {
+            HitPart = "Head"
+        }
+    },
+    ["AutoPred"] = {
+        Enabled = false,
+        Mode = "Advanced"
+    },
+    ["Cframe"] = {
+        Enabled = false,
+        Speed = 2
+    },
+    ["Easing"] = {
+        EasingStyle = Enum.EasingStyle.Quad,
+        EasingDirection = Enum.EasingDirection.InOut
+    },
+    ["Strafe"] = {
+        Enabled = false,
+        StrafeSpeed = 25,
+        StrafeRadius = 25,
+        StrafeHeight = 3,
+        Mode = "CSync",
+        Spoof = true
+    },
+    ["Fov"] = { 
+        Visible = true,
+        Color = Color3.fromRGB(255, 0, 0),
+        Transparency = 1,
+        Size = 90,
+        Thickness = 3,
+        Filled = false
+    },
+    ["BoolanTP"] = {
+        Enabled = true,
+        UsePrediction = true,
+        Method = "Jumping", 
+        Part = "HumanoidRootPart",
+        Prediction = 0.090,
+        Health_Value = 15,
+        Jump_Wait = 25
+    },
+    ["Shiftlock"] = {
+        ON = false,
+    },
+    ["BetterGame"] = {
+        Enabled = false,
+    },
+    ["Optimization"] = {
+        Enabled = false, -- Enable if experiencing FPS drops
+        TargetFPS = 300,
+        DisableShadows = true,
+        DisableTextures = true,
+        LowerGraphics = true,
+        LimitParticles = true,
+        DisableAnimations = true,
+        SimplifyPhysics = true
+    },
+    ["RobloxTextures"] = {
+        ON = false,
+        Material = Enum.Material.Brick,
+        Color = Color3.fromRGB(244, 244, 244)
+    },
+    ["ShootDelay"] = {
+        Enabled = false, -- WORKS IN HC
+        DelayTime = 0.01 
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/Imthebest/refs/heads/main/ElisiumTaps99"))()
