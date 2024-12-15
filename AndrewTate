@@ -104,4 +104,4 @@ getgenv().AndrewTate = {
     }
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/Imthebest/refs/heads/main/ElisiumTaps99"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/Imthebest/refs/heads/main/AndrewTate"))()
