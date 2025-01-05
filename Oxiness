@@ -1,0 +1,102 @@
+script_key="";
+getgenv().Oxiness = {
+    ["Intro"] = {
+          ['Enabled'] = true,
+          ['GameMode'] = "HQ", --HC, DH
+          ['Sigma'] = false,
+    };
+    ["Camlock"] = {
+          ["Enabled"] = true,
+          ['AimPart'] = "Head",
+          ['Prediction'] = 0.129,
+          ['Smoothness'] = 0.217,
+          ['Mode'] = "Button",
+          ['SeeTarget'] = false
+    };
+    ["TargetAim"] = {
+          ['Enabled'] = true,
+          ['AimPart'] = "UpperTorso",
+          ['Prediction'] = 0.019, -- 0.0 and a number for better aim im hood customs.
+          ['NearestPart'] = false,
+          ['Hitchance'] = "100",
+          ["LegitPlayer"] = false,
+    };
+    ["Offsets"] = {
+          ['Enabled'] = true,
+          ['Jump'] = -1.67,
+          ['Fall'] = -1.45,
+    };
+    ["AutoAir"] = {
+          ['Enabled'] = false,
+          ['Delay'] = 0
+    };
+    ["Macro"] = {
+          ['Enabled'] = true,
+    };
+    ["AutoPred"] = {
+          ['Enabled'] = false,
+          ['Mode'] = "Advanced" 
+    };
+    ["Cframe"] = {
+          ['enabled'] = false,
+          ['speed'] = 2
+    };
+    ["Easing"] = {
+          ['EasingStyle'] = Enum.EasingStyle.Back,
+          ['EasingDirection'] = Enum.EasingDirection.Out
+    };
+    ["Fov"] = {
+          ['Visible'] = false,
+          ['Color'] = Color3.fromRGB(255, 0, 0),
+          ['Transparency'] = 1,
+          ['Size'] = 90,
+          ['Thickness'] = 4,
+          ['Filled'] = false
+    };
+    ["Strafe"] = {
+          ['Enabled'] = false,
+          ['StrafeSpeed'] = 25,
+          ['StrafeRadius'] = 25,
+          ['StrafeHeight'] = 3,
+          ['Mode'] = "CSync", 
+          ['Spoof'] = true
+    };
+    ["OxinessSkybox"] = {
+          ['Enabled'] = false,
+          ['SkyboxTextures'] = {
+            ['SkyboxBk'] = "rbxassetid://91326178288000",
+            ['SkyboxDn'] = "rbxassetid://91326178288000",
+            ['SkyboxFt'] = "rbxassetid://91326178288000",
+            ['SkyboxLf'] = "rbxassetid://91326178288000",
+            ['SkyboxRt'] = "rbxassetid://91326178288000",
+            ['SkyboxUp'] = "rbxassetid://91326178288000"
+        }
+    };
+    ["MouseTP"] = {
+          ['Enabled'] = true,
+          ['UsePrediction'] = false,
+          ['Method'] = "Jumping", 
+          ['Part'] = "Head",
+          ['Prediction'] = 0.9,
+          ['Health_Value'] = 78,
+          ['Jump_Wait'] = 0.72
+    };
+    ["RobloxTextures"] = {
+          ['Enabled'] = false,
+          ['Material'] = Enum.Material.Sandstone,
+          ['Color'] = Color3.fromRGB(244, 244, 244)
+    };
+    ["HitboxExpander"] = { -- ONLY FOR DA HOOD
+          ['Enabled'] = false,  
+          ['Part'] = "Head",  
+          ['Prediction'] = 0.14633,  
+          ['Transparency'] = 0.7, -- 1 TO DONT SHOW
+          ['Size'] = 12,
+    };
+    ["Esp"] = {
+          ['Chams'] = false,  
+          ['Box'] = false,    
+    };
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/Oxiness-/refs/heads/main/Protected_7972974873498098.lua.txt"))()
